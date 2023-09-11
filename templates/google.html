@@ -1,0 +1,13 @@
+{{template "head.html" .head}}
+<body>
+    <form action="/google" method="get">
+        <input type="text" name="q"/>
+        <input type="submit" value="get">
+    </form>
+    <br>
+    <br>
+    <div>
+        {{.text}}
+    </div>
+
+    {{template "foot.html" .foot}}

@@ -1,0 +1,14 @@
+{{template "head.html" .head}}
+<body>
+    <h2>Enter Download link</h2>
+    <form action="/doDownload" method="get">
+        <input type="text" name="link"/>
+        <input type="submit" value="Download">
+    </form>
+    <br>
+    <br>
+    <div>
+        {{.text}}
+    </div>
+
+    {{template "foot.html" .foot}}
